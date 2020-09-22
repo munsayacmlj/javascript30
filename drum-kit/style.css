@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background-image: url("./back-circles.jpg");
+  background-position: center center;
+  height: 100vh;
+}
+
+.container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.key {
+  width: 70px;
+  height: 70px;
+  border: 3px solid gray;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.key + .key {
+  margin-left: 30px;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: yellow;
+  box-shadow: 0 0 5px yellow;
+}
+
+kbd {
+  display: block;
+  color: white;
+  font-size: 25px;
+}
+
+span {
+  display: block;
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 10px;
+}
